@@ -1,19 +1,89 @@
 @import "./Partials/reset";
 @import "./Partials/font";
+@import "./Partials/colors";
 @import "./Partials/spaces";
+@import "./Partials/mixin";
+@import "./Partials/button";
 
+* {
+  box-sizing: border-box;
+}
 header nav {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 header nav img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin-left: $margin-10;
-  margin-top: $margin-10;
+  margin: $margin-10;
 }
 header nav ul {
-  display: inline-block;
+  display: flex;
   list-style-type: none;
+  margin-left: $margin-10;
+}
+header nav ul li {
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-left: $margin-10;
+  padding: $padding-10;
+  text-align: center;
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: $font-20px;
+}
+
+h1 {
+  @include title-big;
+  text-align: center;
+  margin-block: $margin-10;
+}
+
+.hero {
+  background-color: $green-bck;
+}
+
+.hero ul {
+  width: 50%;
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-inline: $margin-auto;
+  margin-block: 30px;
+}
+.hero ul li button {
+  @include myButton;
+  @include floating;
+  width: 10rem;
+  height: 6vh;
+  cursor: pointer;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  margin: 100px $margin-10;
+  width: 70%;
+}
+.text-box img {
+  @include floating;
+}
+.text {
+  width: 60%;
+  margin-left: 50px;
+}
+
+.grill {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero .grill img {
+  @include floating;
 }

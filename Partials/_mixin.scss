@@ -1,5 +1,9 @@
 @mixin title-big {
-  font-size: $font-40px;
-  color: $text;
-  font-weight: $font-weight-800;
+  @include fontChoose("size", 100px);
+  @include fontChoose("weight", 800);
+}
+@mixin floating {
+  border-radius: 100px;
+  box-shadow: 0 3px 5px #000;
+  border: 1px solid #d2cfcfaf;
 }

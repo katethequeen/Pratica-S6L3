@@ -1,4 +1,8 @@
-$arial: "Arial", sans-serif;
+@mixin fontChoose($property, $value) {
+  font-#{$property}: $value;
+}
+
+/*$arial: "Arial", sans-serif;
 $segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $georgia: Georgia, "Times New Roman", Times, serif;
 
@@ -6,8 +10,9 @@ $font-17px: 17px;
 $font-18px: 18px;
 $font-20px: 20px;
 $font-40px: 40px;
+$font-100px: 100px;
 
 $font-weight-600: 600;
 $font-weight-700: 700;
 $font-weight-800: 800;
-$font-weight-900: 900;
+$font-weight-900: 900;*/

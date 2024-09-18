@@ -1,7 +1,8 @@
 @mixin myButton {
   border-radius: 100px;
-  background-color: $pink;
-  font-family: $arial;
-  font-size: $font-18px;
-  font-weight: $font-weight-800;
+  background-color: $light-green-bck;
+  color: $light-orange-text;
+  @include fontChoose("family", "Georgia");
+  @include fontChoose("size", "18px");
+  @include fontChoose("weight", 800);
 }
