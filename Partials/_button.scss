@@ -1,0 +1,7 @@
+@mixin myButton {
+  border-radius: 100px;
+  background-color: $pink;
+  font-family: $arial;
+  font-size: $font-18px;
+  font-weight: $font-weight-800;
+}

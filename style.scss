@@ -1,0 +1,19 @@
+@import "./Partials/reset";
+@import "./Partials/font";
+@import "./Partials/spaces";
+
+header nav {
+  display: block;
+}
+
+header nav img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: $margin-10;
+  margin-top: $margin-10;
+}
+header nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
