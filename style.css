@@ -128,6 +128,29 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+/*$arial: "Arial", sans-serif;
+$segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$georgia: Georgia, "Times New Roman", Times, serif;
+
+$font-17px: 17px;
+$font-18px: 18px;
+$font-20px: 20px;
+$font-40px: 40px;
+$font-100px: 100px;
+
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -169,10 +192,12 @@ h1 {
   font-weight: 800;
   text-align: center;
   margin-block: 10px;
+  animation: fade-in 5s;
 }
 
 .hero {
   background-color: #00a38c;
+  height: 90vh;
 }
 
 .hero ul {
@@ -183,20 +208,22 @@ h1 {
   justify-content: space-evenly;
   margin-inline: auto;
   margin-block: 30px;
+  animation: fade-in 5s;
 }
 
 .hero ul li button {
   border-radius: 100px;
   background-color: #c3eddf;
   color: #fcbd03;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-family: "Georgia";
+  font-size: "18px";
   font-weight: 800;
   border-radius: 100px;
   box-shadow: 0 3px 5px #000;
   border: 1px solid rgba(210, 207, 207, 0.6862745098);
   width: 10rem;
   height: 6vh;
+  margin-inline: auto;
   cursor: pointer;
 }
 
@@ -205,6 +232,7 @@ h1 {
   align-items: center;
   margin: 100px 10px;
   width: 70%;
+  animation: fade-in 5s;
 }
 
 .text-box img {
@@ -218,8 +246,15 @@ h1 {
   margin-left: 50px;
 }
 
-.text-box .grill {
+.grill {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 20px;
+}
+
+.grill img {
   border-radius: 100px;
   box-shadow: 0 3px 5px #000;
   border: 1px solid rgba(210, 207, 207, 0.6862745098);
+  border-radius: 0;
 }/*# sourceMappingURL=style.css.map */

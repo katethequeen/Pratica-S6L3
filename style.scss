@@ -34,17 +34,19 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  font-size: $font-20px;
+  font-size: 20px;
 }
 
 h1 {
   @include title-big;
   text-align: center;
   margin-block: $margin-10;
+  @include fade-in;
 }
 
 .hero {
   background-color: $green-bck;
+  height: 90vh;
 }
 
 .hero ul {
@@ -55,12 +57,14 @@ h1 {
   justify-content: space-evenly;
   margin-inline: $margin-auto;
   margin-block: 30px;
+  @include fade-in;
 }
 .hero ul li button {
   @include myButton;
   @include floating;
   width: 10rem;
   height: 6vh;
+  margin-inline: auto;
   cursor: pointer;
 }
 
@@ -69,6 +73,7 @@ h1 {
   align-items: center;
   margin: 100px $margin-10;
   width: 70%;
+  @include fade-in;
 }
 .text-box img {
   @include floating;
@@ -80,10 +85,11 @@ h1 {
 
 .grill {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-around;
+  margin-block: 20px;
 }
 
-.hero .grill img {
+.grill img {
   @include floating;
+  border-radius: 0;
 }
